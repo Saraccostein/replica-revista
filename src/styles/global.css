@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --text-color: oklch(0.2934 0.0304 15.78);
+    --background-color: oklch(0.9327 0.0312 79.93);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
