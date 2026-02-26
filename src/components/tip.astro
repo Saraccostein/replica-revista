@@ -1,0 +1,18 @@
+---
+const { number, title, content, imgNumber, imgAlt } = Astro.props;
+---
+
+<article class="tip">
+  <div class="display-title">
+    <div>
+      <h2>TIP</h2>
+      <h2>{number}</h2>
+    </div>
+    <h3>{title}</h3>
+  </div>
+
+  <p>{content}</p>
+
+  <img src={`../public/svg/img${imgNumber}.svg`} alt={imgAlt} />
+
+</article>

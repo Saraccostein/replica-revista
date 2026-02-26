@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
+    --primary-color: oklch(0.4644 0.1534 21.2);
+    --secondary-color: oklch(0.6587 0.1072 206.11);
     --text-color: oklch(0.2934 0.0304 15.78);
     --background-color: oklch(0.9327 0.0312 79.93);
 }
@@ -9,12 +13,89 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-weight: 700;
+    margin: 40px;
+    text-wrap: balance;
+    font-family: "M PLUS 2", sans-serif;
+}
+
+main {
+    display: flex;
+    gap: 4rem;
+}
+
+h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: 'Dela Gothic One', cursive;
+    line-height: 0.9;
+}
+
+h2,
+h3 {
+    color: var(--primary-color);
 }
 
 p {
-    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 0.8rem;
 }
 
 header {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+header h1 {
+    grid-column: 1 / 5;
+}
+
+header p {
+    grid-column: 6 / 9;
+}
+
+section {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.display-title {
     display: flex;
+    align-items: center;
+}
+
+.display-title h2 {
+    margin: 0;
+}
+
+.display-title div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+.display-title div h2:first-child {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.display-title div h2:last-child {
+    font-size: 2rem;
+}
+
+article p {
+    margin-top: 0;
 }

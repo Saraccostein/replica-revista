@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css"
+import Tip from "../components/tip.astro"
 ---
 
 <html lang="es">
@@ -12,15 +13,107 @@ import "../styles/global.css"
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-
-		<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
-		<title>CDMX TRAVEL TIPS</title>
+		<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=M+PLUS+2:wght@100..900&display=swap" rel="stylesheet">		<title>CDMX TRAVEL TIPS</title>
 	</head>
 	<body>
+
 	<header>
 	    <h1>CDMX TRAVEL TIPS 11</h1>
-					<p>旅は予想もつかないから面白い.だから先回りしすぎるのもどうかと思うけど、やはりセオリ ー やナ ー というものはある。ということで CDMX (メキシ 0 シティ)の旅の 0 ツを伝授.あとは君自身の直感でこの美しくもカオスな街を楽しんでほしい.</p>
+		<p>旅は予想もつかないから面白い.だから先回りしすぎるのもどうかと思うけど、やはりセオリ ー やナ ー というものはある。ということで CDMX (メキシ 0 シティ)の旅の 0 ツを伝授.あとは君自身の直感でこの美しくもカオスな街を楽しんでほしい.</p>
 	</header>
+
+	<main>
+    	<section>
+        	<Tip
+               	title="空港に着いたら、まずはタクシーカウンターへ。"
+               	number={1}
+                imgNumber={1}
+                imgAlt=""
+                content="空港に到着したら、荷物も多いし、ここは無理せずタクシーを使う。ゲートを出たら、すぐにタクシーカウンターがあるので、どれでもいいからホテル名や住所を伝えて、チケットを購入しよう。中心部のセントロやローマ地区へは280〜350ペソくらい。SUVなど大型車は高く、セダンやコンパクトカーなどの小型車なら安くなる。 1〜2人なら小型車で十分。空港の外に出ると、客引きがいるのでチケットを見せれば、どのタクシーに乗ればよいか教えてくれる。ちなみにタクシーを使うのは空港のみで、市内ではそれほどおすすめしない（流しのタクシーはトラブルの可能性あり）。"
+            />
+            <Tip
+              title="SIMカードを買うなら空港で。"
+              number={2}
+              imgAlt=""
+              content="最近は日本の携帯会社の海外パケットプランも安くなってきたが、現地SIMカードのほうが安く済む場合も多い。空港にはSIMカードカウンターがあり、設定まで手伝ってくれる。200MBで約800円ほど。動画はホテルのWi-Fiを利用し、日中はLINEやSNS程度なら十分。後からチャージも可能で、キャリアはAT&Tがおすすめ。"
+            />
+
+            <Tip
+              title="荷物を置いたら、まずはラテンアメリカタワーへ。"
+              number={3}
+              imgNumber={2}
+              imgAlt="ラテンアメリカタワーの展望台から見たメキシコシティの景色"
+              content="午後到着の場合、まずホテルに荷物を置き、身軽になってセントロ地区を散策してみよう。おすすめは高さ182mのラテンアメリカタワー。展望台から街全体を見渡せるため、アラメダ公園や国立宮殿など主要なランドマークの位置関係を把握でき、翌日以降の移動がぐっと楽になる。"
+            />
+
+            <img id="img3" src="../../public/svg/img3.svg" alt="">
+
+            <Tip
+              title="地下鉄とメトロバス共通の乗車カードを手に入れておく。"
+              number={4}
+              imgAlt=""
+              content="地下鉄とメトロバスで共通利用できる交通カードを購入しておこう。地下鉄は回数券もあるが、メトロバスはカード必須。駅や停留所の専用機で購入でき、Suicaのようなチャージ式。カード代10ペソ＋乗車6ペソから利用可能だが、50〜100ペソほどチャージしておくと安心。1枚で複数人分の乗車も可能。"
+            />
+
+            <Tip
+              title="クルマでの移動はUberに限る。"
+              number={5}
+              imgNumber={4}
+              imgAlt="メキシコシティでUberを利用するスマートフォン画面"
+              content="市内の流しタクシーは遠回りやメーター改造のリスクがあるため、配車アプリUberの利用がおすすめ。事前に料金と行き先が確定し、相互評価制度もあるため安心。ただし通信環境は必須。夜間や初めて訪れる地域ではGoogle Mapsでルート確認を行うとより安全。"
+            />
+
+            <Tip
+              title="気になるチップの相場を知っておこう。"
+              number={6}
+              imgAlt=""
+              content="メキシコにはチップ文化がある。レストランでは料金の10〜15％が目安で、カード支払い時は「10% de propina」と伝えればチップ込みで決済可能。カフェは5〜10ペソ、ホテルポーターやベッドメイクは20ペソ、美容室やマッサージは50ペソ程度。タクシーは不要だが、スーパーの袋詰め係には5〜10ペソ渡すのが一般的。"
+            />
+        </section>
+
+    	<section>
+         <Tip
+           title="お腹を壊したら、トレドとスポーツドリンク。"
+           number={7}
+           imgNumber={5}
+           imgAlt="薬局で販売されている下痢止めトレドとElectrolit"
+           content="環境の変化でお腹を壊すこともある。そんなときは薬局で購入できる下痢止め「トレド」が定番。水分補給にはスポーツドリンクのElectrolitがおすすめで、特にココナッツ味が人気。脱水を防ぐためにも早めの補給を心がけよう。"
+         />
+
+         <Tip
+           title="¡Hola! まずはこれだけ覚えておけば安心。"
+           number={8}
+           imgNumber={6}
+           imgAlt="スペイン語の基本フレーズを示した案内"
+           content="現地の言葉を少し覚えるだけで距離が縮まる。Chido（いいね）、Chingón（最高）、Neta?（マジで？）などは若者がよく使う表現。断るときはNo gracias、お願いするときはPor favor。会計時はLa cuenta por favor。ビールはCervezaで、Una cervezaは1本、Dos cervezasは2本。"
+         />
+
+         <img id="img7" src="../../public/svg/img7.svg" alt="">
+
+         <Tip
+           title="小腹がすいたらマルちゃんかVIPS。"
+           number={9}
+           imgNumber={8}
+           imgAlt="スーパーで販売されているマルちゃんラーメン"
+           content="夜に少しだけ食べたいときは、スーパーで買えるマルちゃんラーメンやファミリーレストランVIPSが便利。写真付きメニューがあり注文もしやすく、重たいメキシコ料理を避けたいときの安心な選択肢。"
+         />
+
+         <Tip
+           title="お土産を持ち帰るにはジップ付きバッグ。"
+           number={10}
+           imgNumber={9}
+           imgAlt="市場で販売されているジップ付き大型バッグ"
+           content="大量のお土産を持ち帰るなら、市場で売られているジップ付き底面付きバッグがおすすめ。ポリエステル製で丈夫なため、そのまま預け入れ荷物として利用可能。価格はおよそ50ペソほどで実用性が高い。"
+         />
+
+         <Tip
+           title="二日酔いにはメキシコのスープ。"
+           number={11}
+           imgAlt=""
+           content="メスカルを飲み過ぎた翌朝は、地元の人が食べるスープがおすすめ。牛モツのPancitaや牛肉スープのBirriaはスパイシーで体を温め、胃腸の回復にも良い。やはり温かい汁物は旅先でも安心できる一品。"
+         />
+    	</section>
+	</main>
+
 	</body>
 </html>
