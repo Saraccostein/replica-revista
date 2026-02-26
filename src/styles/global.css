@@ -8,4 +8,13 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color);
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+header {
+    display: flex;
 }
