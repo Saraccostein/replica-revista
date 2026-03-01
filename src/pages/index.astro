@@ -49,7 +49,7 @@ import Tip from "../components/tip.astro"
             />
          </div>
          <div>
-            <img id="img3" src="../../public/svg/img3.svg" alt="">
+             <img id="img3" src={`${import.meta.env.BASE_URL}svg/img3.svg`} alt="">
 
             <Tip
               title="地下鉄とメトロバス共通の乗車カードを手に入れておく。"
@@ -122,7 +122,7 @@ import Tip from "../components/tip.astro"
          </div>
 
         <div>
-         <img id="img7" src="../../public/svg/img7.svg" alt="">
+            <img id="img7" src={`${import.meta.env.BASE_URL}svg/img7.svg`} alt="">
 
          <Tip
            title="小腹がすいたらマルちゃんかVIPS。"
