@@ -13,6 +13,6 @@ const { number, title, content, imgNumber, imgAlt } = Astro.props;
 
   <p>{content}</p>
 
-  <img id={`tip-img${number}`} src={`../public/svg/img${imgNumber}.svg`} alt={imgAlt} />
+  <img id={`tip-img${number}`} src={`${import.meta.env.BASE_URL}svg/img${imgNumber}.svg`} alt={imgAlt} />
 
 </article>
